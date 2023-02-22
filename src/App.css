@@ -62,7 +62,39 @@ select{
 .button-last p:hover{
   background-color: #544F4F;
 }
-@media (max-width: 380px) {
+@media (max-width: 700px) {
+  body{
+    background-color: #103656;
+    color: white;
+  }
+  .cotainer{
+    width: 90%;
+    
+  }
+  .button-last p{
+    display:  flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 5px;
+    border: 1px solid #0078D7;
+    text-align: center;
+  }
+  .button-last p:hover{
+      background-color: bisque;
+  }
+  select{
+    width: 50%;
+    justify-content: center;
+    margin-left: 100px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+  }
+  .collect-data{
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
   body{
     background-color: #103656;
     color: white;
