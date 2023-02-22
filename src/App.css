@@ -1,14 +1,12 @@
-body{
-  padding: 0;
-  margin: 0;
+*{
   box-sizing: border-box;
+}
+.cotainer{
   width: 70%;
   margin: 0 auto;
-  text-align: center;
-  padding-bottom: 50px;
 }
 .collect-data{
-  width: 50%;
+  width: 70%;
   margin: 50px auto;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -16,22 +14,33 @@ body{
   color: white;
   border-radius: 10px;
   font-family: Lucida Sans;
+
+} 
+.total{
+  text-align: center;
+}
+.collect-data p{
+ word-wrap: break-word;
+
 } 
 .no{
   background-color: white;
   border-radius: 50px;
   color: black;
+  text-align: center;
+  
 }
 .header{
   width: 100%;
+  margin: 0 auto;
   background-color: #103656;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   color: white;
   
 }
 select{
-  width: 90%;
+  width: 100%;
   text-align: start;
   height: 40px;
   margin: 20px auto;
@@ -40,7 +49,7 @@ select{
   display: flex;
   justify-content: center;
   /* border: 1px solid black; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   
 }
 .button-last p{
@@ -53,13 +62,31 @@ select{
 .button-last p:hover{
   background-color: #544F4F;
 }
-@media (max-width: 700px) {
-  .button-last{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 380px) {
+  body{
+    background-color: #103656;
+    color: white;
+  }
+  .cotainer{
+    width: 90%;
+    
   }
   .button-last p{
-    margin: 10px;
+    margin: 5px;
+    border: 1px solid #0078D7;
   }
-
+  .button-last p:hover{
+      background-color: bisque;
+  }
+  select{
+    width: 50%;
+    justify-content: center;
+    margin-left: 80px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+  }
+  .collect-data{
+    width: 100%;
+  }
 }
